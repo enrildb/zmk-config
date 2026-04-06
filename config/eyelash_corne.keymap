@@ -19,12 +19,12 @@
 // Skyloong BASE adapted: navigation + home-row mods
 // -----------------------------------------------------------------------------------------------------------
 // | ESC  |  Q  |  W  |  E  |  R  |  T  |         |BL_UP|         |  Y  | HOME|  UP | END | APP | `(d)|
-// |  F4  |A/ALT|S/SFT|D/CTL|F/GUI| TAB |  |BT_PRV|MUTE |BT_NXT| |TO(1)| LEFT| DOWN|RIGHT| BSPC| '(d)|
+// |  F4  |A/ALT|S/SFT|D/CTL|F/GUI| TAB |  |VOL_DN|MUTE |VOL_UP| |TO(1)| LEFT| DOWN|RIGHT| BSPC| '(d)|
 // |MO(3) |  Z  |  X  |  C  |  V  |  B  | MUTE|   |BL_DN|         |PG_UP|PG_DN|  ,  |  .  |  -  | RSFT|
 //                    |MO(4)|MO(2)| ENT |                          | SPC | SPC |MO(2)|
                         bindings = <
    &kp ESC   &kp Q       &kp W       &kp E        &kp R       &kp T                &bl BL_INC             &kp Y     &kp HOME  &kp UP    &kp END   &kp K_APP &kp LBKT
-   &kp F4    &mt LALT A  &mt LSHFT S &mt LCTRL DEL &mt LGUI F &kp TAB    &bt BT_PRV &kp C_MUTE &bt BT_NXT &to 1     &kp LEFT  &kp DOWN  &kp RIGHT &kp BSPC  &kp SQT
+   &kp F4    &mt LALT A  &mt LSHFT S &mt LCTRL DEL &mt LGUI F &kp TAB    &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &to 1     &kp LEFT  &kp DOWN  &kp RIGHT &kp BSPC  &kp SQT
    &mo 3     &kp Z       &kp X       &kp C        &kp V       &kp B    &kp C_MUTE  &bl BL_DEC             &kp PG_UP &kp PG_DN &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
                           &mo 4       &mo 2        &kp RET                                                  &kp SPACE &kp SPACE &mo 2
                         >;
