@@ -18,14 +18,14 @@
                 base_layer {
 // Skyloong BASE adapted: navigation + home-row mods
 // -----------------------------------------------------------------------------------------------------------
-// | ESC  |  Q  |  W  |  E  |  R  |  T  |         |BL_UP|         |  Y  | HOME|  UP | END | APP | `(d)|
+// | ESC  |  Q  |  W  |  E  |  R  |  T  |         |BRIUP|         |  Y  | HOME|  UP | END | APP | `(d)|
 // |  F4  |A/ALT|S/SFT|D/CTL|F/GUI| TAB |  |VOL_DN|MUTE |VOL_UP| |TO(1)| LEFT| DOWN|RIGHT| BSPC| '(d)|
-// |MO(3) |  Z  |  X  |  C  |  V  |  B  | MUTE|   |BL_DN|         |PG_UP|PG_DN|  ,  |  .  |  -  | RSFT|
+// |MO(3) |  Z  |  X  |  C  |  V  |  B  | MUTE|   |BRIDN|         |PG_UP|PG_DN|  ,  |  .  |  -  | RSFT|
 //                    |MO(4)|MO(2)| ENT |                          | SPC | SPC |MO(2)|
                         bindings = <
-   &kp ESC   &kp Q       &kp W       &kp E        &kp R       &kp T                &bl BL_INC             &kp Y     &kp HOME  &kp UP    &kp END   &kp K_APP &kp LBKT
+   &kp ESC   &kp Q       &kp W       &kp E        &kp R       &kp T                &kp C_BRI_UP             &kp Y     &kp HOME  &kp UP    &kp END   &kp K_APP &kp LBKT
    &kp F4    &mt LALT A  &mt LSHFT S &mt LCTRL DEL &mt LGUI F &kp TAB    &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &to 1     &kp LEFT  &kp DOWN  &kp RIGHT &kp BSPC  &kp SQT
-   &mo 3     &kp Z       &kp X       &kp C        &kp V       &kp B    &kp C_MUTE  &bl BL_DEC             &kp PG_UP &kp PG_DN &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
+   &mo 3     &kp Z       &kp X       &kp C        &kp V       &kp B    &kp C_MUTE  &kp C_BRI_DN             &kp PG_UP &kp PG_DN &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
                           &mo 4       &mo 2        &kp RET                                                  &kp SPACE &kp SPACE &mo 2
                         >;
                 };
@@ -78,14 +78,14 @@
                 function_layer {
 // Function layer: BT profiles, backlight, F-keys
 // -----------------------------------------------------------------------------------------------------------
-// |TO(0) |BL_UP|     |     |     |     |         |     |         | F12 | F7  | F8  | F9  |     |     |
-// |TO(0) |BL_DN|BT 4 |BT 5 |     |     |  |      |     |       | | F11 | F4  | F5  | F6  |     |     |
-// |TO(0) |BL_TG|BT 1 |BT 2 |BT 3 |     |     |   |     |         | F10 | F1  | F2  | F3  |     |     |
+// |TO(0) |BL_IC|     |     |     |     |         |     |         | F12 | F7  | F8  | F9  |     |     |
+// |TO(0) |BL_OF|BT 4 |BT 5 |     |     |  |      |     |       | | F11 | F4  | F5  | F6  |     |     |
+// |TO(0) |BL_ON|BT 1 |BT 2 |BT 3 |     |     |   |     |         | F10 | F1  | F2  | F3  |     |     |
 //                    |     |     |     |                          |     |     |     |
                         bindings = <
    &to 0  &bl BL_INC  &none        &none        &none        &none              &trans                 &kp F12 &kp F7 &kp F8 &kp F9 &none &none
-   &to 0  &bl BL_DEC  &bt BT_SEL 3 &bt BT_SEL 4 &none        &none    &trans   &trans     &trans      &kp F11 &kp F4 &kp F5 &kp F6 &none &none
-   &to 0  &bl BL_TOG  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none    &trans   &trans                &kp F10 &kp F1 &kp F2 &kp F3 &none &none
+   &to 0  &bl BL_OFF  &bt BT_SEL 3 &bt BT_SEL 4 &none        &none    &trans   &trans     &trans      &kp F11 &kp F4 &kp F5 &kp F6 &none &none
+   &to 0  &bl BL_ON   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none    &trans   &trans                &kp F10 &kp F1 &kp F2 &kp F3 &none &none
                        &trans       &trans       &trans                                                 &trans  &trans &trans
                         >;
                 };
