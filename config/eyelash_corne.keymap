@@ -77,16 +77,16 @@
                 };
 
                 function_layer {
-// Function layer: BT profiles, RGB LEDs, F-keys
+// Function layer: BT profiles, RGB LEDs, display, F-keys
 // -----------------------------------------------------------------------------------------------------------
-// |TO(0) |R_BRI|     |     |     |     |         |     |         | F12 | F7  | F8  | F9  |     |R_BRI|
-// |TO(0) |R_OFF|BT 4 |BT 5 |     |     |  |      |     |       | | F11 | F4  | F5  | F6  |     |R_OFF|
-// |TO(0) |R_ON |BT 1 |BT 2 |BT 3 |     |     |   |     |         | F10 | F1  | F2  | F3  |     |R_ON |
+// |R_EFF |R_BRI|     |     |     |     |         |     |         | F12 | F7  | F8  | F9  |     |BL_IC|
+// |TO(0) |R_OFF|BT 4 |BT 5 |     |     |  |      |     |       | | F11 | F4  | F5  | F6  |     |BL_OF|
+// |R_EFR |R_ON |BT 1 |BT 2 |BT 3 |     |     |   |     |         | F10 | F1  | F2  | F3  |     |BL_ON|
 //                    |     |     |     |                          |     |     |     |
                         bindings = <
-   &to 0  &rgb_ug RGB_BRI &none        &none        &none        &none             &trans                &kp F12 &kp F7 &kp F8 &kp F9 &none &rgb_ug RGB_BRI
-   &to 0  &rgb_ug RGB_OFF &bt BT_SEL 3 &bt BT_SEL 4 &none        &none    &trans   &trans     &trans     &kp F11 &kp F4 &kp F5 &kp F6 &none &rgb_ug RGB_OFF
-   &to 0  &rgb_ug RGB_ON  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none    &trans   &trans                &kp F10 &kp F1 &kp F2 &kp F3 &none &rgb_ug RGB_ON
+   &rgb_ug RGB_EFF &rgb_ug RGB_BRI &none        &none        &none        &none             &trans                &kp F12 &kp F7 &kp F8 &kp F9 &none &bl BL_INC
+   &to 0           &rgb_ug RGB_BRD &bt BT_SEL 3 &bt BT_SEL 4 &none        &none    &trans   &trans     &trans     &kp F11 &kp F4 &kp F5 &kp F6 &none &bl BL_OFF
+   &rgb_ug RGB_EFR &rgb_ug RGB_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none    &trans   &trans                &kp F10 &kp F1 &kp F2 &kp F3 &none &bl BL_ON
                        &trans       &trans       &trans                                                 &trans  &trans &trans
                         >;
                 };
