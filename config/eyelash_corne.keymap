@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/backlight.h>
+#include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/pointing.h>
 
 / {
@@ -76,16 +77,16 @@
                 };
 
                 function_layer {
-// Function layer: BT profiles, backlight, F-keys
+// Function layer: BT profiles, RGB LEDs, F-keys
 // -----------------------------------------------------------------------------------------------------------
-// |TO(0) |BL_IC|     |     |     |     |         |     |         | F12 | F7  | F8  | F9  |     |     |
-// |TO(0) |BL_OF|BT 4 |BT 5 |     |     |  |      |     |       | | F11 | F4  | F5  | F6  |     |     |
-// |TO(0) |BL_ON|BT 1 |BT 2 |BT 3 |     |     |   |     |         | F10 | F1  | F2  | F3  |     |     |
+// |TO(0) |R_BRI|     |     |     |     |         |     |         | F12 | F7  | F8  | F9  |     |R_BRI|
+// |TO(0) |R_OFF|BT 4 |BT 5 |     |     |  |      |     |       | | F11 | F4  | F5  | F6  |     |R_OFF|
+// |TO(0) |R_ON |BT 1 |BT 2 |BT 3 |     |     |   |     |         | F10 | F1  | F2  | F3  |     |R_ON |
 //                    |     |     |     |                          |     |     |     |
                         bindings = <
-   &to 0  &bl BL_INC  &none        &none        &none        &none             &trans                &kp F12 &kp F7 &kp F8 &kp F9 &none &bl BL_INC
-   &to 0  &bl BL_OFF  &bt BT_SEL 3 &bt BT_SEL 4 &none        &none    &trans   &trans     &trans     &kp F11 &kp F4 &kp F5 &kp F6 &none &bl BL_OFF
-   &to 0  &bl BL_ON   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none    &trans   &trans                &kp F10 &kp F1 &kp F2 &kp F3 &none &bl BL_ON 
+   &to 0  &rgb_ug RGB_BRI &none        &none        &none        &none             &trans                &kp F12 &kp F7 &kp F8 &kp F9 &none &rgb_ug RGB_BRI
+   &to 0  &rgb_ug RGB_OFF &bt BT_SEL 3 &bt BT_SEL 4 &none        &none    &trans   &trans     &trans     &kp F11 &kp F4 &kp F5 &kp F6 &none &rgb_ug RGB_OFF
+   &to 0  &rgb_ug RGB_ON  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none    &trans   &trans                &kp F10 &kp F1 &kp F2 &kp F3 &none &rgb_ug RGB_ON
                        &trans       &trans       &trans                                                 &trans  &trans &trans
                         >;
                 };
