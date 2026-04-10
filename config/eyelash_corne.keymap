@@ -83,9 +83,9 @@
 // |TO(0) |BL_ON|BT 1 |BT 2 |BT 3 |     |     |   |     |         | F10 | F1  | F2  | F3  |     |     |
 //                    |     |     |     |                          |     |     |     |
                         bindings = <
-   &to 0  &bl BL_INC  &none        &none        &none        &none              &trans                 &kp F12 &kp F7 &kp F8 &kp F9 &none &none
-   &to 0  &bl BL_OFF  &bt BT_SEL 3 &bt BT_SEL 4 &none        &none    &trans   &trans     &trans      &kp F11 &kp F4 &kp F5 &kp F6 &none &none
-   &to 0  &bl BL_ON   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none    &trans   &trans                &kp F10 &kp F1 &kp F2 &kp F3 &none &none
+   &to 0  &bl BL_INC  &none        &none        &none        &none             &trans                &kp F12 &kp F7 &kp F8 &kp F9 &none &bl BL_INC
+   &to 0  &bl BL_OFF  &bt BT_SEL 3 &bt BT_SEL 4 &none        &none    &trans   &trans     &trans     &kp F11 &kp F4 &kp F5 &kp F6 &none &bl BL_OFF
+   &to 0  &bl BL_ON   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none    &trans   &trans                &kp F10 &kp F1 &kp F2 &kp F3 &none &bl BL_ON 
                        &trans       &trans       &trans                                                 &trans  &trans &trans
                         >;
                 };
