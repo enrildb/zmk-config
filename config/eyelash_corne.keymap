@@ -40,12 +40,12 @@
 // Skyloong BASE adapted: navigation + home-row mods
 // -----------------------------------------------------------------------------------------------------------
 // | ESC  |  Q  |  W  |  E  |  R  |  T  |         |BRIUP|         |  Y  | HOME|  UP | END | APP | `(d)|
-// |  A   |A/ALT|S/SFT|D/CTL|F/GUI| TAB |  |VOL_DN|MUTE |VOL_UP| |TO(1)| LEFT| DOWN|RIGHT| BSPC| '(d)|
+// | F9   |A/ALT|S/SFT|D/CTL|F/GUI| TAB |  |VOL_DN|MUTE |VOL_UP| |TO(1)| LEFT| DOWN|RIGHT| BSPC| '(d)|
 // |MO(3) |  Z  |  X  |  C  |  C  |  V  | MUTE|   |BRIDN|         |PG_UP|PG_DN|  ,  |  .  |  -  | RSFT|
 //                    |MO(4)|MO(2)|LT2/ENT|                          | SPC | SPC |MO(2)|
                         bindings = <
    &kp ESC   &kp Q       &kp W       &kp E        &kp R       &kp T                &kp C_BRI_UP             &kp Y     &kp HOME  &kp UP    &kp END   &kp K_APP &kp LBKT
-   &kp A     &mt LALT A  &mt LSHFT S &mt LCTRL DEL &mt LGUI F &kp TAB    &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &to 1     &kp LEFT  &kp DOWN  &kp RIGHT &kp BSPC  &kp SQT
+   &kp F9    &mt LALT A  &mt LSHFT S &mt LCTRL DEL &mt LGUI F &kp TAB    &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &to 1     &kp LEFT  &kp DOWN  &kp RIGHT &kp BSPC  &kp SQT
    &mo 3     &kp Z       &kp X       &kp C        &kp C       &kp V    &kp C_MUTE  &kp C_BRI_DN             &kp PG_UP &kp PG_DN &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
                           &mo 4       &mo 2        &lt 2 RET                                                  &kp SPACE &kp SPACE &mo 2
                         >;
@@ -60,7 +60,7 @@
 //                    |MO(4)|     | ENT |                          | SPC | SPC |     |
                         bindings = <
    &kp TAB   &kp Q       &kp W       &kp E        &kp R       &kp T                &trans                 &kp Y     &kp U     &kp I     &kp O         &kp P    &kp MINUS
-   &to 0     &kp A       &mt LSHFT S &mt LCTRL D  &mt LGUI F  &kp G      &trans    &trans     &trans      &kp H     &kp J     &kp K     &mt LSHFT L   &kp BSPC &kp SQT
+   &to 0     &kp A       &mt LSHFT S &mt LCTRL D  &mt LGUI F  &kp G      &trans    &trans     &trans      &kp H     &kp J     &kp K     a&mt LSHFT L   &kp BSPC &kp SQT
    &trans    &kp Z       &kp X       &kp C        &kp V       &kp B      &trans    &trans                 &kp N     &kp M     &kp COMMA &kp DOT       &kp FSLH &kp RSHFT
                           &mo 4       &trans       &trans                                                  &kp SPACE &kp SPACE &trans
                         >;
