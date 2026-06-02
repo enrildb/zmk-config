@@ -24,11 +24,12 @@
 // Longer hold threshold for hold-tap keys (home-row mods &mt, layer-tap &lt).
 // Default is 200ms; raise it so the hold state is easier to reach.
 &mt {
-        tapping-term-ms = <400>;
+        flavor = "balanced";
+        tapping-term-ms = <200>;
 };
 
 &lt {
-        tapping-term-ms = <400>;
+        tapping-term-ms = <200>;
 };
 
 / {
