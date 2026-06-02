@@ -10,7 +10,26 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/rgb.h>
+
+// Mouse cursor speed: 2x the default (600) for faster movement
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
 #include <dt-bindings/zmk/pointing.h>
+
+// Reach full cursor speed sooner (default is 300ms)
+&mmv {
+        time-to-max-speed-ms = <200>;
+        acceleration-exponent = <1>;
+};
+
+// Longer hold threshold for hold-tap keys (home-row mods &mt, layer-tap &lt).
+// Default is 200ms; raise it so the hold state is easier to reach.
+&mt {
+        tapping-term-ms = <400>;
+};
+
+&lt {
+        tapping-term-ms = <400>;
+};
 
 / {
         keymap {
