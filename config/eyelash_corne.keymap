@@ -99,10 +99,10 @@
                 function_layer {
 // Function layer: BT profiles, RGB LEDs, display, F-keys
 // -----------------------------------------------------------------------------------------------------------
-// |R_EFF |R_BRI| F2  |     |      |     |         |     |         | F12 | F7  | F8  | F9  |     |BL_IC|
-// |TO(0) |R_OFF|BT 4 |BT 5 |BT_CLR|     |  |      |     |       | | F11 | F4  | F5  | F6  |     |BL_OF|
-// |R_EFR |R_ON |BT 1 |BT 2 |BT 3  |     |     |   |     |         | F10 | F1  | F2  | F3  |     |BL_ON|
-//                    |     |      |     |                         |     |     |     |
+// |R_EFF |R_BRI| F2  |     |     |     |         |     |         | F12 | F7  | F8  | F9  |     |BL_IC|
+// |TO(0) |R_OFF|BT 4 |BT 5 |     |     |  |      |     |       | | F11 | F4  | F5  | F6  |     |BL_OF|
+// |R_EFR |R_ON |BT 1 |BT 2 |BT 3 |     |     |   |     |         | F10 | F1  | F2  | F3  |     |BL_ON|
+//                    |     |     |     |                          |     |     |     |
                         bindings = <
    &rgb_ug RGB_EFF &rgb_ug RGB_BRI &kp F2       &none        &none        &none             &trans                &kp F12 &kp F7 &kp F8 &kp F9 &none &bl BL_INC
    &to 0           &rgb_ug RGB_BRD &bt BT_SEL 3 &bt BT_SEL 4 &none        &none    &trans   &trans     &trans     &kp F11 &kp F4 &kp F5 &kp F6 &none &bl BL_OFF
